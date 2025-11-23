@@ -3,10 +3,16 @@
     "description": "My supper project!",
     "type": "project",
     "license": "no",
+    "scripts": {
+        "phpcs": "phpcs"
+    },
     "autoload": {
         "psr-4": {
             "Vano\\HexletPhp\\": "src/"
-        }
+        },
+        "files": [
+            "src/Runner.php"
+        ]
     },
     "authors": [
         {
@@ -16,5 +22,8 @@
     ],
     "require": {
         "illuminate/collections": "^10.49"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
     }
 }
